@@ -1,4 +1,4 @@
-# React Native drawer like panel!
+# React Native bottom up - drawer like panel!
 
 # Description
 
