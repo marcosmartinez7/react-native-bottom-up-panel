@@ -80,7 +80,7 @@ class SomeComponent extends Component {
  
  # Demo
  
- ![Alt Text](https://im5.ezgif.com/tmp/ezgif-5-ac705ab625.gif)
+ ![Alt Text](https://media.giphy.com/media/jHSitsiVS0H5R6LHkE/giphy.gif)
 
 
 # Inspired by: 
