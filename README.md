@@ -22,11 +22,15 @@ The component has a view with absolute positioning, the position and height of t
 
 # Usage
 
+**Just add the index.js file wherever you want in your project and import it from your component**
+
 ```
 
 import React, {Component} from 'react';
 import { Dimensions, FlatList,  Text, View } from 'react-native';
-import {Ionicons} from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons'; 
+import BottomUpPanel from "path/to/index.js";
+
 
 
 const {height} = Dimensions.get('window');
