@@ -75,6 +75,10 @@ class SomeComponent extends Component {
  ![Alt Text](https://im5.ezgif.com/tmp/ezgif-5-ac705ab625.gif)
 
 
+# Inspired by: 
+  https://github.com/rationalappdev/react-native-bottom-drawer
+
+
  
 
  
