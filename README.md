@@ -26,9 +26,11 @@ The component has a view with absolute positioning, the position and height of t
 
 import React, {Component} from 'react';
 import { Dimensions, FlatList,  Text, View } from 'react-native';
+import {Ionicons} from '@expo/vector-icons';
 
 
 const {height} = Dimensions.get('window');
+const DATA= ["Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component"];
 
 class SomeComponent extends Component {
 
@@ -50,8 +52,12 @@ class SomeComponent extends Component {
                <FlatList style={{ backgroundColor: 'black', opacity: 0.7, flex:1}}
                     data={DATA}
                     renderItem={({item}) =>
-                        <Text>{item}</Text>}/>
+                        <Text style={{color:'white', padding:20}}>{item}</Text>}/>
           </View>
+          
+  renderBottomUpPanelIcon = () =>
+        <Ionicons name={"ios-arrow-up"} style={{color:"white"}} size={30}/>        
+          
 }
 ```
 # Props
@@ -63,3 +69,12 @@ class SomeComponent extends Component {
  - **headerText**: text that is visible at top of the panel
  - **headerTextStyle**: style applied to that text
  - **bottomUpSlideBtn**: style applied to the toggle button
+ 
+ # Demo
+ 
+ ![Alt Text](https://im5.ezgif.com/tmp/ezgif-5-ac705ab625.gif)
+
+
+ 
+
+ 
