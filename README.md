@@ -36,6 +36,7 @@ import BottomUpPanel from "path/to/index.js";
 const {height} = Dimensions.get('window');
 const DATA= ["Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component","Some component"];
 
+
 class SomeComponent extends Component {
 
    render = ()=>
@@ -46,8 +47,14 @@ class SomeComponent extends Component {
                       startHeight={80}
                       headerText={"List of items"}
                       headerTextStyle={{color:"white", fontSize: 15}}
-                      bottomUpSlideBtn={appStyle.bottomUpSlideBtn}
-                  >
+                      bottomUpSlideBtn={{display: 'flex',
+                                       alignSelf: 'flex-start',
+                                       backgroundColor: 'black',
+                                       alignItems: 'center',
+                                       borderTopColor: 'grey',
+                                       borderTopWidth: 5}}
+      </BottomUpPanel>
+
    
                 
                 
