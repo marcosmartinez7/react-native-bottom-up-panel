@@ -1,5 +1,9 @@
 # React Native bottom up panel
 
+ # Demo
+ 
+ ![Alt Text](https://media.giphy.com/media/jHSitsiVS0H5R6LHkE/giphy.gif)
+
 # Description
 
 This component is a dynamic height and position view. It has a startHeight property that determines the section of the
@@ -78,9 +82,6 @@ class SomeComponent extends Component {
  - **headerTextStyle**: style applied to that text
  - **bottomUpSlideBtn**: style applied to the toggle button
  
- # Demo
- 
- ![Alt Text](https://media.giphy.com/media/jHSitsiVS0H5R6LHkE/giphy.gif)
 
 
 # Inspired by: 
