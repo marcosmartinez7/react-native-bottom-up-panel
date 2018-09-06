@@ -28,7 +28,7 @@ The component has a view with absolute positioning, the position and height of t
 
 **Just add the index.js file wherever you want in your project and import it from your component**
 
-```
+```javascript
 
 import React, {Component} from 'react';
 import { Dimensions, FlatList,  Text, View } from 'react-native';
