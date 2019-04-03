@@ -12,12 +12,9 @@ import {Ionicons} from '@expo/vector-icons';
 import {Text} from "native-base";
 import * as Easing from "react-native/Libraries/Animated/src/Easing";
 
-
 const { width, height } = Dimensions.get('window');
 
-
 export default class BottomUpPanel extends Component {
-
 
     static defaultProps = {
         isOpen: false
@@ -52,15 +49,13 @@ export default class BottomUpPanel extends Component {
 
     _animatedHeight = new Animated.Value(this.props.isOpen ? this.config.height.end : this.config.height.start);
 
-
     _animatedPosition = new Animated.Value(this.props.isOpen
         ? this.config.position.end
         : this.config.position.start);
 
-
     componentWillMount() {
         this._animatedPosition.addListener((value) => {
-            //Every times that position changes then actualize the related properties. I.e: height, so the view
+            //Every time that position changes then actualize the related properties. I.e: height, so the view
             //has the interpolated height
             this.config.position.animates.map(item => {
                 item().setValue(value.value);
@@ -69,7 +64,6 @@ export default class BottomUpPanel extends Component {
         // Reset value once listener is registered to update depending animations
         this._animatedPosition.setValue(this._animatedPosition._value);
     }
-
 
 
     // Handle isOpen prop changes to either open or close the window
@@ -158,8 +152,6 @@ export default class BottomUpPanel extends Component {
                     useNativeDriver: true
                 }
             ).start()
-
-
         });
 
     };
@@ -181,7 +173,6 @@ export default class BottomUpPanel extends Component {
                 useNativeDriver: true
             }
         ).start();
-
     };
 
     toggle = () => {
